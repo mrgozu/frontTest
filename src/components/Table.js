@@ -20,9 +20,9 @@ export const Table = (props) => {
             <tbody>
                 {
 
-                    data.map(value => {
+                    data.map((value, index) => {
                         return (
-                            <tr key={value.id}>
+                            <tr key={index}>
                                 <td>{value.name}</td>
                                 <td>{value.description}</td>
                                 <td>
